@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:src="@drawable/tplogo"
+        android:id="@+id/imageView"
+        android:scaleType="fitCenter"
+        android:background="#FFFFFF"
+        />
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="20"
+        android:src="@drawable/slider"
+        android:id="@+id/imageView1"
+        android:scaleType="centerCrop"
+        android:background="#FFFFFF"
+        />
+
+        <TextView
+            android:text="@string/_123_euclid_ave"
+            android:textSize="30px"
+            android:textStyle="bold"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:text="@string/phone_5628507043"
+            android:textSize="30px"
+            android:textStyle="bold"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="right"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="10dp"/>
+
+
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="#9CCC65"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp">
+    <Button
+        android:text="@string/place_your_order_here"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/button"
+        android:background="?android:attr/selectableItemBackground"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:padding="16dp"
+        android:onClick="PlaceOrder"
+        />
+    </FrameLayout>
+</LinearLayout>

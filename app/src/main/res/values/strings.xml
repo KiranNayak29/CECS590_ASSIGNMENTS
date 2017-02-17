@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">TacoPronto</string>
+    <string name="phone_5628507043">Phone : 5628507043</string>
+    <string name="_123_euclid_ave">123 Euclid Ave</string>
+    <string name="place_your_order_here">Place your Order Here!!</string>
+    <string name="place_your_order">Place Your Order</string>
+    <string name="margarita">Margarita</string>
+    <string name="size">Size</string>
+    <string name="corn_6">Corn   $6</string>
+    <string name="beef">Beef</string>
+    <string name="chicken">Chicken</string>
+    <string name="white_fish">White Fish</string>
+    <string name="cheese">Cheese</string>
+    <string name="sea_food">Sea Food</string>
+    <string name="rice">Rice</string>
+    <string name="beans">Beans</string>
+    <string name="lbt">LBT</string>
+    <string name="pico_de_gallo">Pico de Gallo</string>
+    <string name="guacamole">Guacamole</string>
+    <string name="soda">Soda</string>
+    <string name="cerveza">Cerveza</string>
+    <string name="tequila">Tequila</string>
+</resources>

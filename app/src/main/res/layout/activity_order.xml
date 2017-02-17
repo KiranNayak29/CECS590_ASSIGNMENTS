@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        >
+      <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:orientation="vertical" android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#FFFFFF"
+       >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/tplogo"
+        android:id="@+id/imageView"
+        android:scaleType="fitCenter"
+        android:background="#FFFFFF"
+        />
+</LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:text="@string/size"
+                android:layout_width="145dp"
+                android:layout_height="50dp"
+                android:id="@+id/Size"
+                android:textSize="25sp"
+                android:background="@color/defgreen"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <RadioButton android:id="@+id/medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medium $4"
+                    android:onClick="onsizeRadioButtonClicked"
+                    style="@style/CategoryStyle"
+                    android:buttonTint="@color/defgreen"
+                    />
+                <RadioButton android:id="@+id/large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Large     $7"
+                    android:onClick="onsizeRadioButtonClicked"
+                    style="@style/CategoryStyle"
+                    android:buttonTint="@color/defgreen"
+                    />
+            </RadioGroup>
+
+
+          </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:text="Tortilla"
+                android:layout_width="@dimen/boxwidth"
+                android:layout_height="@dimen/boxheight"
+                android:id="@+id/tortilla"
+                android:textSize="25sp"
+                android:background="@color/defgreen"
+                android:textColor="@android:color/white"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:gravity="center"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+                <RadioButton android:id="@+id/Corn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Corn      $6"
+                    android:onClick="ontortillaRadioButtonClicked"
+                    style="@style/CategoryStyle"
+                    android:buttonTint="@color/defgreen"
+                    />
+                <RadioButton android:id="@+id/Flour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flour     $5"
+                    android:onClick="ontortillaRadioButtonClicked"
+                    style="@style/CategoryStyle"
+                    android:buttonTint="@color/defgreen"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+       </LinearLayout>
+
+        <TextView
+            android:text="Fillings     ($2 each)"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Fillings"
+            android:textSize="25sp"
+            android:background="@color/defgreen"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="8dp"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            >
+            <CheckBox android:id="@+id/checkbox_beef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beef"
+                android:onClick="onfillingsCheckboxClicked"
+                style="@style/CategoryStyle"
+                android:buttonTint="@color/defgreen"/>
+            <CheckBox android:id="@+id/checkbox_chicken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chicken"
+                android:onClick="onfillingsCheckboxClicked"
+                style="@style/CategoryStyle"
+                android:buttonTint="@color/defgreen"/>
+            <CheckBox android:id="@+id/checkbox_WhiteFish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/white_fish"
+                android:onClick="onfillingsCheckboxClicked"
+                style="@style/CategoryStyle"
+                android:buttonTint="@color/defgreen"/>
+            <CheckBox android:id="@+id/checkbox_cheese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cheese"
+                android:onClick="onfillingsCheckboxClicked"
+                style="@style/CategoryStyle"
+                android:buttonTint="@color/defgreen"/>
+            <CheckBox android:id="@+id/checkbox_seafood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sea_food"
+                android:onClick="onfillingsCheckboxClicked"
+                style="@style/CategoryStyle"
+                android:buttonTint="@color/defgreen"/>
+
+
+        </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_weight="1"
+            >
+
+            <CheckBox android:id="@+id/checkbox_rice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rice"
+                android:onClick="onfillingsCheckboxClicked"
+                style="@style/CategoryStyle"
+                android:buttonTint="@color/defgreen"/>
+            <CheckBox android:id="@+id/checkbox_beans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beans"
+                android:onClick="onfillingsCheckboxClicked"
+                style="@style/CategoryStyle"
+                android:buttonTint="@color/defgreen"/>
+            <CheckBox android:id="@+id/LBT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lbt"
+                android:onClick="onfillingsCheckboxClicked"
+                style="@style/CategoryStyle"
+                android:buttonTint="@color/defgreen"/>
+
+            <CheckBox android:id="@+id/checkbox_pico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pico_de_gallo"
+                android:onClick="onfillingsCheckboxClicked"
+                style="@style/CategoryStyle"
+                android:buttonTint="@color/defgreen"
+                android:gravity="center_vertical"/>
+            <CheckBox android:id="@+id/checkbox_guacamole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/guacamole"
+                android:onClick="onfillingsCheckboxClicked"
+                style="@style/CategoryStyle"
+
+                android:buttonTint="@color/defgreen"
+                android:gravity="center_vertical"/>/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+        <TextView
+            android:text="Beverage  ($4 each)"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/beverage"
+            android:textSize="25sp"
+            android:background="@color/defgreen"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"/>
+
+
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="8dp"
+            >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:layout_weight="1"
+                >
+                <CheckBox android:id="@+id/Soda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/soda"
+                    android:onClick="onbeveragesCheckboxClicked"
+                    style="@style/CategoryStyle"
+                    android:buttonTint="@color/defgreen"/>
+                <CheckBox android:id="@+id/Cerveza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cerveza"
+                    android:onClick="onbeveragesCheckboxClicked"
+                    style="@style/CategoryStyle"
+                    android:buttonTint="@color/defgreen"/>
+
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:layout_weight="1"
+                >
+
+                <CheckBox android:id="@+id/margarita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/margarita"
+                    android:onClick="onbeveragesCheckboxClicked"
+                    style="@style/CategoryStyle"
+                    android:buttonTint="@color/defgreen"/>
+                <CheckBox android:id="@+id/tequila"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tequila"
+                    android:onClick="onbeveragesCheckboxClicked"
+                    style="@style/CategoryStyle"
+                    android:buttonTint="@color/defgreen"/>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#388E3C"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp">
+            <Button
+                android:text="@string/place_your_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/buttonorder"
+                android:background="?android:attr/selectableItemBackground"
+                android:textSize="25sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:padding="16dp"
+                android:onClick="PlaceOrder"
+                />
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
