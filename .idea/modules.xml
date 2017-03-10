@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CECS590_ASSIGNMENTS.iml" filepath="$PROJECT_DIR$/CECS590_ASSIGNMENTS.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Memories/Memories.iml" filepath="$PROJECT_DIR$/Memories/Memories.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TacoPronto/TacoPronto.iml" filepath="$PROJECT_DIR$/TacoPronto/TacoPronto.iml" />
     </modules>
   </component>
 </project>
