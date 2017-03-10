@@ -22,7 +22,7 @@ public class dbInitiate extends SQLiteOpenHelper {
                 + MemoEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + MemoEntry.Caption + " TEXT NOT NULL, "
                 + MemoEntry.Image_Path + " TEXT NOT NULL, "
-                + MemoEntry.Place + " INTEGER NOT NULL);";
+                + MemoEntry.Place + " TEXT NOT NULL);";
 
 
         db.execSQL(SQL_CREATE_TABLE);
