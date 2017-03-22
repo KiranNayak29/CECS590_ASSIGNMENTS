@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <android.csulb.edu.arttherapy.CanvasView
+        android:id="@+id/signature_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#FFFFFF" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="B"
+            android:background="#2196F3"
+
+            android:onClick="Bclick"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/a"
+        android:text="G"
+        android:background="#8BC34A"
+        android:padding="5dp"
+        android:onClick="Gclick"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="R"
+        android:id="@+id/aa"
+        android:background="#F44336"
+        android:padding="5dp"
+        android:onClick="Rclick"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Y"
+        android:background="#FFEB3B"
+        android:padding="5dp"
+        android:onClick="Yclick"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="B"
+        android:background="#000000"
+        android:padding="5dp"
+        android:onClick="Blclick"/>
+    </LinearLayout>
+</FrameLayout>
