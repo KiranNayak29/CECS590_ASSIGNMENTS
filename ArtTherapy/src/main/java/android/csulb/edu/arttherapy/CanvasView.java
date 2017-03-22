@@ -33,10 +33,10 @@ public class CanvasView extends View {
         super(c, attrs);
         context = c;
 
-        // we set a new Path
+
         mPath = new Path();
 
-        // and we set a new Paint with the desired attributes
+
         mPaint = new Paint();
         mPaint.setAntiAlias(true);
         mPaint.setColor(Color.BLACK);
@@ -45,34 +45,34 @@ public class CanvasView extends View {
         mPaint.setStrokeWidth(4f);
     }
 
-    // override onSizeChanged
+
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
 
-        // your Canvas will draw onto the defined Bitmap
+
         mBitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
         mCanvas = new Canvas(mBitmap);
     }
 
-    // override onDraw
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        // draw the mPath with the mPaint on the canvas when onDraw
+
         for (int i = 0; i < paths.size(); i++) {
             canvas.drawPath(paths.get(i), mPaints.get(i));
         }
     }
 
-    // when ACTION_DOWN start touch according to the x,y values
+
     private void startTouch(float x, float y) {
         mPath.moveTo(x, y);
         mX = x;
         mY = y;
     }
 
-    // when ACTION_MOVE move touch according to the x,y values
+
     private void moveTouch(float x, float y) {
         float dx = Math.abs(x - mX);
         float dy = Math.abs(y - mY);
@@ -91,14 +91,14 @@ public class CanvasView extends View {
         invalidate();
     }
 
-    // when ACTION_UP stop touch
+
     private void upTouch() {
         mPath.lineTo(mX, mY);
         mCanvas.drawPath(mPath, mPaint);
         paths.add(mPath);
         mPath = new Path();
         mPaints.add(mPaint);
-        // Creates a new Paint reference, but keeps the previous state (color, width, etc.)
+
         mPaint = new Paint(mPaint);
     }
 

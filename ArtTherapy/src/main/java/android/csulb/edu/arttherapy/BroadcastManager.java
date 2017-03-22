@@ -29,12 +29,12 @@ public class BroadcastManager extends BroadcastReceiver{
                         .setContentTitle("ART THERAPY!")
                         .setContentText("Its time to draw!")
                         .setAutoCancel(true);
-// Creates an explicit intent for an Activity in your app
+
         Intent resultIntent = new Intent(context, MainActivity.class);
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(context);
-// Adds the back stack for the Intent (but not the Intent itself)
+
         stackBuilder.addParentStack(MainActivity.class);
-// Adds the Intent that starts the Activity to the top of the stack
+
         stackBuilder.addNextIntent(resultIntent);
         PendingIntent resultPendingIntent =
                 stackBuilder.getPendingIntent(
@@ -45,7 +45,7 @@ public class BroadcastManager extends BroadcastReceiver{
 
         NotificationManager mNotificationManager =
                 (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-// mId allows you to update the notification later on.
+
         mNotificationManager.notify(0, mBuilder.build());
 
 

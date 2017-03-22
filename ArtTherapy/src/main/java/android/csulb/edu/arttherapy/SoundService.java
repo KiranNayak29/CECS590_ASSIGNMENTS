@@ -12,7 +12,7 @@ public class SoundService extends Service {
 
     @Override
     public IBinder onBind(Intent intent) {
-        // TODO: Return the communication channel to the service.
+
         return null;
     }
 
@@ -33,7 +33,7 @@ public class SoundService extends Service {
 
 
     public IBinder onUnBind(Intent arg0) {
-        // TO DO Auto-generated method
+
         return null;
     }
 
