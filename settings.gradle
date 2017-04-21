@@ -1,1 +1,1 @@
-include ':TacoPronto', ':Memories', ':ArtTherapy'
+include ':TacoPronto', ':Memories', ':ArtTherapy', ':letsconnect'
