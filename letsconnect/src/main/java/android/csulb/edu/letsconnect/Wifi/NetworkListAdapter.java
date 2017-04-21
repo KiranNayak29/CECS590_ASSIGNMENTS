@@ -17,9 +17,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-/**
- * Created by vaibhavjain on 4/6/2017
- */
+
 
 public class NetworkListAdapter extends ArrayAdapter<ScanResult>{
 

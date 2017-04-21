@@ -1,8 +1,6 @@
 package android.csulb.edu.letsconnect.Wifi;
 
-/**
- * Created by kedar on 4/3/2016.
- */
+
 public class Util {
     public static final String KEY_OPERATION="keyrequesttype";
     //    public static final String KEY_DECISION="keydecision";
